@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Active Page Health</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    #healthStatus {
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      margin-top: 10px;
+    }
+    #errorDescription {
+      margin-top: 10px;
+      font-size: 14px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3>Ping Active Page Health</h3>
+  <button id="pingButton">Check Site Health</button>
+  <div id="healthStatus"></div>
+  <div id="errorDescription"></div> <!-- Місце для опису помилки -->
+
+  <script src="popup.js"></script>
+</body>
+</html>

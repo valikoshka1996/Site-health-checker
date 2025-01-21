@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Ping Active Page Health Check",
+  "description": "Check website health and response time",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"  // Дозвіл для доступу до активної вкладки
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://*/*",  // Дозволи для HTTP запитів
+    "https://*/*"  // Дозволи для HTTPS запитів
+  ]
+}
